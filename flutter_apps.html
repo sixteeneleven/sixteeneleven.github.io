@@ -26,7 +26,7 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.html">
-                    <div class="black-text">Home</div>
+                    <div class="black-text">About Me</div>
                 </a></li>
                 <li><a href="flutter_apps.html">
                     <div class="black-text">Mobile Apps</div>
@@ -36,6 +36,7 @@
     </nav>
 </div>
 
+<!-- Mobile Nav -->
 <ul class="sidenav" id="mobile-demo">
     <li><a href="index.html">Home</a></li>
     <li><a href="flutter_apps.html">Mobile Apps</a></li>
@@ -44,6 +45,9 @@
 <script>
     $(document).ready(function () {
         $('.sidenav').sidenav();
+    });
+    $(document).ready(function(){
+        $('.modal').modal();
     });
 </script>
 
@@ -69,7 +73,7 @@
         </div>
     </div>
     <!-- Text -->
-    <div class="col s12 l5 off  set-l1">
+    <div class="col s10 l5  offset-s1">
         <br>
         <br>
         <div class="container">
@@ -86,6 +90,7 @@
         </div>
     </div>
 </div>
+<br>
 
 <Br>
 
@@ -94,42 +99,27 @@
     <div class="section">
         <div class="row">
             <!-- Icon Section -->
-            <div class="col s12 m6 l3">
+            <div class="col s10 m4 l4 offset-s1">
                 <div class="icon-block">
                     <h2 class="center light-blue-text"><i class="medium material-icons">flash_on</i></h2>
                     <h5 class="center">Fast development</h5>
 
-                    <p class="light">Flutter has a number of tools to make development fast and easy, such as "stateful
-                        hot reloading". Changes can be made live to a running application, without having to restart
-                        each time, meaning less time is spent trying to something....
+                    <p class="light">Flutter makes development fast, with features such as stateful hot reloading that enable changes to be made to a live running application.
                     </p>
                 </div>
             </div>
             <!-- Icon Section -->
-            <div class="col s12 m6 l3">
+            <div class="col s10 m4 l4 offset-s1">
                 <div class="icon-block">
                     <h2 class="center light-blue-text"><i class="medium material-icons">memory</i></h2>
                     <h5 class="center">Powerful</h5>
 
                     <p class="light">Flutter applications compile natively to both iOS and Android, meaning the run as
-                        fast as if they were made specifically for each platform. Flutter apps target a constant 60fps
-                        for a smooth user experience.</p>
+                        fast as if they were made specifically for each platform. </p>
                 </div>
             </div>
             <!-- Icon Section -->
-            <div class="col s12 m6 l3">
-                <div class="icon-block">
-                    <h2 class="center light-blue-text"><i class="medium material-icons">format_paint</i></h2>
-                    <h5 class="center">Customisable</h5>
-
-                    <p class="light">By utilizing elements and principles of Material Design, we were able to create a
-                        framework that incorporates components and animations that provide more feedback to users.
-                        Additionally, a single underlying responsive system across all platforms allow for a more
-                        unified user experience.</p>
-                </div>
-            </div>
-            <!-- Icon Section -->
-            <div class="col s12 m6 l3">
+            <div class="col s10 m4 l4 offset-s1">
                 <div class="icon-block">
                     <h2 class="center light-blue-text"><i class="medium material-icons">phonelink</i></h2>
                     <h5 class="center">Cross platform</h5>
@@ -143,6 +133,23 @@
     <br><br>
 </div>
 
+<!-- Contact Modal -->
+<div id="contactmodal" class="modal">
+    <div class="modal-content">
+        <h4 style="font-weight: bold" class="blue-text">Get in touch!</h4>
+        <br>
+        <ul>
+            <li><i class="small material-icons">phone_iphone</i> <a class="black-text flow-text">  +44 (0)7896862030</a></li>
+            <br>
+            <li><i class="small material-icons">alternate_email</i><a class=" black-text flow-text">   sixteeneleven97@gmail.com</a></li>
+            <br>
+            <li><i class="small material-icons">code</i><a class="black-text flow-text" href="http://github.com/sixteeneleven">   GitHub</a></li>
+        </ul>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-teal btn-flat">Close</a>
+    </div>
+</div>
 
 <!-- Footer -->
 <footer class="page-footer blue darken-2">
@@ -150,17 +157,14 @@
         <div class="row">
             <div class="col l6 s8">
                 <h5 class="white-text">Need an app?</h5>
-                <p class="grey-text text-lighten-4">TODO</p>
-
-
+                <p class="grey-text text-lighten-4">Coming soon.</p>
             </div>
-
             <div class="col l4 s12">
                 <h5 class="white-text">Connect</h5>
                 <ul>
-                    <li><i class="tiny material-icons">phone_iphone</i> <a class="white-text" href="#!">+44 (0)7896862030</a></li>
-                    <li><i class="tiny material-icons">alternate_email</i><a class="white-text" href="#!">sixteeneleven97@gmail.com</a></li>
-                    <li><i class="tiny material-icons">code</i><a class="white-text" href="#!"> GitHub</a></li>
+                    <li><i class="tiny material-icons">phone_iphone</i> <a class="white-text modal-trigger" href="#contactmodal"> +44 (0)7896862030</a></li>
+                    <li><i class="tiny material-icons">alternate_email</i><a class="white-text modal-trigger" href="#contactmodal"> sixteeneleven97@gmail.com</a></li>
+                    <li><i class="tiny material-icons">code</i><a class="white-text modal-trigger" href="#contactmodal"> GitHub</a></li>
                 </ul>
             </div>
         </div>

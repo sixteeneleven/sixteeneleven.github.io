@@ -21,24 +21,29 @@
 <div class="navbar-fixed">
     <nav class="grey lighten-3 z-depth-0" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo black-text"></a>
+        <a id="logo-container" href="#" class="brand-logo black-text">About Me</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="index.html"><div class="black-text">Home</div></a></li>
+            <li><a href="index.html"><div class="black-text">About Me</div></a></li>
             <li><a href="flutter_apps.html"><div class="black-text">Mobile Apps</div></a></li>
         </ul>
     </div>
     </nav>
 </div>
 
+<!-- Mobile Nav -->
 <ul class="sidenav" id="mobile-demo">
-    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html">About Me</a></li>
     <li><a href="flutter_apps.html">Mobile Apps</a></li>
 </ul>
 
 <script>
     $(document).ready(function(){
         $('.sidenav').sidenav();
+    });
+
+    $(document).ready(function(){
+        $('.modal').modal();
     });
 </script>
 
@@ -63,7 +68,7 @@
         <div class="card-image">
             <img src=assets/profile_pic.jpg>
             <span class="card-title">Queen's View, Pitlochry</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red hoverable"><i class="material-icons">mail</i></a>
+            <a class="btn-floating halfway-fab waves-effect waves-light red hoverable modal-trigger" href="#contactmodal"><i class="material-icons">mail</i></a>
         </div>
         <div class="card-content">
             <p>BSc Hons Business Computing,<br>
@@ -203,13 +208,31 @@
 <br>
 <br>
 
+<!-- Contact Modal -->
+<div id="contactmodal" class="modal">
+    <div class="modal-content">
+        <h4 style="font-weight: bold" class="pink-text">Get in touch!</h4>
+        <br>
+        <ul>
+            <li><i class="small material-icons">phone_iphone</i> <a class="black-text flow-text">  +44 (0)7896862030</a></li>
+            <br>
+            <li><i class="small material-icons">alternate_email</i><a class=" black-text flow-text">   sixteeneleven97@gmail.com</a></li>
+            <br>
+            <li><i class="small material-icons">code</i><a class="black-text flow-text" href="http://github.com/sixteeneleven">   GitHub</a></li>
+        </ul>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-red btn-flat">Close</a>
+    </div>
+</div>
+
 <!-- Footer -->
 <footer class="page-footer pink darken-2">
     <div class="container">
         <div class="row">
             <div class="col l6 s8">
                 <h5 class="white-text">Need an app?</h5>
-                <p class="grey-text text-lighten-4">TODO </p>
+                <p class="grey-text text-lighten-4">Coming soon!</p>
 
 
             </div>
@@ -217,9 +240,9 @@
             <div class="col l4 s12">
                 <h5 class="white-text">Connect</h5>
                 <ul>
-                    <li><i class="tiny material-icons">phone_iphone</i> <a class="white-text" href="#!">+44 (0)7896862030</a></li>
-                    <li><i class="tiny material-icons">alternate_email</i><a class="white-text" href="#!"> sixteeneleven97@gmail.com</a></li>
-                    <li><i class="tiny material-icons">code</i><a class="white-text" href="#!"> GitHub</a></li>
+                    <li><i class="tiny material-icons">phone_iphone</i> <a class="white-text modal-trigger" href="#contactmodal">+44 (0)7896862030</a></li>
+                    <li><i class="tiny material-icons">alternate_email</i><a class="white-text modal-trigger" href="#contactmodal"> sixteeneleven97@gmail.com</a></li>
+                    <li><i class="tiny material-icons">code</i><a class="white-text modal-trigger" href="#contactmodal"> GitHub</a></li>
                 </ul>
             </div>
         </div>
