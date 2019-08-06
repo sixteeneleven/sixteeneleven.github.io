@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <!-- OnScroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>About Me</title>
+</head>
+<body class="black">
+
+<!-- Navigation bar -->
+<div class="navbar-fixed">
+    <nav class="grey lighten-3 z-depth-0" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo black-text">About Me</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">
+                    <div class="black-text">About Me</div>
+                </a></li>
+                <li><a href="business.html">
+                    <div class="black-text">Business</div>
+                </a></li>
+                <li><a href="flutter_apps.html">
+                    <div class="black-text">Mobile Apps</div>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- Mobile Nav -->
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">About Me</a></li>
+    <li><a href="flutter_apps.html">Mobile Apps</a></li>
+</ul>
+
+<script>
+    $(document).ready(function () {
+        $('.sidenav').sidenav();
+    });
+
+    $(document).ready(function () {
+        $('.modal').modal();
+    });
+</script>
+
+<!-- Hero Header -->
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <h1 class="header center white-text" style="font-weight: bold">Business services.</h1>
+        <div class="row center">
+            <h5 class="header col s12 light white-text">Take your business further.</h5>
+        </div>
+        <br><br>
+    </div>
+</div>
+
+<!-- Columns -->
+<div class="container">
+    <div class="section">
+        <!-- Mobile App Section -->
+        <div class="row">
+            <div class="col s10 m4  offset-s1 offset-m1">
+                <div class="icon-block">
+                    <div class="icon-block">
+                        <img class="responsive-img" src=assets/orange_rocket.png>
+                    </div>
+                    <h5 class="center white-text">Template-based website</h5>
+                    <p class="f light white-text">Take your business online with an easy to manage template-based
+                        website, with integrated tools and analytics.</p>
+                    <br>
+                    <div class="center-align hide-on-small-only">
+                        <a href="honors.html" class="waves-effect waves-light btn orange hoverable">Learn More</a>
+                    </div>
+                    <div class="center-align hide-on-med-and-up ">
+                        <a href="honors.html" class="waves-effect waves-light btn orange hoverable">Learn More</a>
+                        <br><br><br><br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <!-- Second Section -->
+            <div class="col s10 m4 offset-s1 offset-m2">
+                <div class="icon-block">
+                    <div class="icon-block">
+                        <img class="responsive-img" src=assets/pink_phone.png>
+                    </div>
+                    <h5 class="center white-text">Custom mobile application</h5>
+                    <p class="light white-text flow"> Create a unique mobile experience with a fully custom installable
+                        cross-platform mobile app.</p>
+                    <br>
+                    <div class="center-align">
+                        <a href="honors.html" class="waves-effect waves-light btn pink hoverable">Learn More</a>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <!-- Third Section
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center materialize-red-text"><i class="material-icons medium">play_circle_filled</i></h2>
+                    <h5 class="center">Video Content</h5>
+                    <p class="light">In my free time I like to create and edit videos. To film I use a Sony RX100 III and edit using Final Cut Pro X. </p>
+                  <br>
+                    <div class="center-align">
+                    <a class="waves-effect waves-light btn materialize-red">hyperlink me</a>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        -->
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
