@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145356560-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-145356560-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <!-- OnScroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Mobile App Developer Fife Dylan Gilchrist</title>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div class="navbar-fixed">
+    <nav class="grey lighten-3 z-depth-0" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo black-text">About Me</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">
+                    <div class="black-text">About Me</div>
+                </a></li>
+                <li><a href="business.html">
+                    <div class="black-text">Business</div>
+                </a></li>
+                <li><a href="flutter_apps.html">
+                    <div class="black-text">Mobile Apps</div>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- Mobile Nav -->
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">About Me</a></li>
+    <li><a href="business.html">Business</a></li>
+    <li><a href="flutter_apps.html">Mobile Apps</a></li>
+</ul>
+
+<script>
+    $(document).ready(function () {
+        $('.sidenav').sidenav();
+    });
+    $(document).ready(function () {
+        $('.modal').modal();
+    });
+</script>
+
+
+<!-- Hero Header -->
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <h1 class="header center green-text text-darken-1" style="font-weight: bold">Stirrup</h1>
+        <h3 class=" center ghten-2" style="font-weight: bold">for Stirling University</h3>
+        <div class="row center">
+            <h5 class="header col s12 light">Available on the App
+                Store and Google Play Store.</h5>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<!-- Hero App Store Graphics -->
+<div class="row">
+    <!-- Image -->
+    <div class="col s6 l2 offset-l1">
+        <div class="icon-block">
+            <img class="responsive-img" src=assets/marketing_stir.png>
+        </div>
+    </div>
+    <div class="col s6 l2">
+        <div class="icon-block">
+            <img class="responsive-img" src=assets/marketing_bus.png>
+        </div>
+    </div>
+    <!-- Desktop Text -->
+    <div class="col s4 l2">
+        <div class="icon-block">
+            <img class="responsive-img" src=assets/marketing_lib.png>
+        </div>
+    </div>
+    <div class="col s4 l2">
+        <div class="icon-block">
+            <img class="responsive-img" src=assets/marketing_canvas.png>
+        </div>
+    </div>
+    <div class="col s4 l2">
+        <div class="icon-block">
+            <img class="responsive-img" src=assets/marketing_dark_mode.png>
+        </div>
+    </div>
+</div>
+
+<br>
+<!-- Bus Times -->
+<!-- Mobile Text-->
+<div class="col s10 offset-s1">
+    <br>
+    <div class="container hide-on-large-only">
+        <br>
+        <h2 class="center green-text"><i class="medium material-icons">directions</i></h2>
+        <h5 class="center">Live public transit times, using Transportapi.com</h5>
+        <p class="light">Get live bus times from different stops around the university campus and town centre, and soon
+            get train times from Stirling Train Station.</p>
+    </div>
+</div>
+<div class="row">
+    <!-- Image -->
+    <div class="col s12 l5 offset-l1">
+        <div class="icon-block">
+            <img class="responsive-img" src=assets/bustimeschopped.png>
+        </div>
+        <div class="hide-on-large-only">
+            <div class="center">
+                <br><a
+                    class="waves-effect waves-light btn-small green hoverable modal-trigger" href="#busmodal">Learn
+                more</a></div>
+        </div>
+    </div>
+    <!-- Desktop Text -->
+    <div class="col l5">
+        <br>
+        <br>
+        <div class="container hide-on-med-and-down">
+            <br>
+            <h2 class="center green-text"><i class="medium material-icons">directions</i></h2>
+            <h5 class="center">Live public transit times, using Transportapi.com</h5>
+            <p class="light">Get live bus times from different stops around the university campus and town centre, and
+                soon get train times from Stirling Train Station.</p>
+            <br>
+            <div class="center"><a
+                    class="waves-effect waves-light btn-small green hoverable modal-trigger" href="#busmodal">Learn
+                more</a></div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Bus Modal -->
+<div id="busmodal" class="modal">
+    <div class="modal-content">
+        <h4 style="font-weight: bold" class="green-text">Transit Times</h4>
+        <br>
+        <p>All of our transit information comes directly from <a href="https://transportapi.com">TransportAPI.com</a>.
+            TransportAPI is a public-transport data service and currently manages First Bus's <a
+                    href="https://www.transportapi.com/showcase/first-group/">real-time-information system.</a>
+            TransportAPI has an open REST API that returns JSON formatted data, which turns into the live bus times you
+            can see in app.</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+</div>
+<!-- End of Bus Times -->
+<br>
+<div class="divider"></div>
+<br>
+<!-- Library Card -->
+<div class="row">
+    <!-- Text -->
+    <div class="col s12 l5 offset-l1">
+        <br>
+        <div class="container">
+            <br>
+            <h2 class="center green-text"><i class="medium material-icons">credit_card</i></h2>
+            <h5 class="center">Digital student card with optical scanning</h5>
+
+            <p class="light">Leaving the student card at home is no problem; you can check into the library and check
+                out books using the app.</p>
+            <br>
+            <div class="center hide-on-med-and-down"><a
+                    class="waves-effect waves-light btn-small green hoverable modal-trigger" href="#libmodal">Learn
+                more</a></div>
+        </div>
+    </div>
+    <!-- Image -->
+    <div class="col s12 l5">
+        <div class="icon-block">
+            <img class="responsive-img" src=assets/mockuplibcrop.png>
+            <div class="hide-on-large-only">
+                <div class="center">
+                    <br><a
+                        class="waves-effect waves-light btn-small green hoverable modal-trigger" href="#libmodal">Learn
+                    more</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Lib Modal -->
+<div class="center-modal">
+    <div id="libmodal" class="modal">
+        <div class="modal-content">
+            <h4 style="font-weight: bold" class="green-text">Digital Library Card</h4>
+            <br>
+            <p>The library entrance/exit gates and the book self-check-out both feature optical readers in addition to
+                the
+                RFID signal readers that are used when you tap your student card. By scanning your unique card number
+                and
+                generating a barcode from it, you can enter the library and borrow books with only the app. </p>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+            <img class="responsive-img" src=assets/library_gate_copy.jpg>
+        </div>
+
+    </div>
+</div>
+<br>
+<div class="divider"></div>
+<br>
+
+
+<!-- Portal -->
+<!-- Mobile Text-->
+<div class="col s12 l6">
+    <br>
+    <div class="container hide-on-large-only">
+        <br>
+        <h2 class="center green-text"><i class="medium material-icons">directions</i></h2>
+        <h5 class="center">Apps, sites and resources<br> for all your student needs.</h5>
+        <p class="light">Access all the necessary student resources like Canvas classes and computer lab availability
+            from within the app.</p>
+    </div>
+</div>
+<div class="row">
+    <!-- Image -->
+    <div class="col s12 l5 offset-l1">
+        <div class="icon-block">
+            <br>
+            <img class="responsive-img" src=assets/mockupportalcrop.png>
+        </div>
+    </div>
+    <!-- Desktop Text -->
+    <div class="col s12 l5">
+        <br>
+        <div class="container hide-on-med-and-down">
+            <h2 class="center green-text"><i class="medium material-icons">link</i></h2>
+            <h5 class="center">Apps, sites and resources<br>for all your student needs.</h5>
+
+            <p class="light">Access the portal, install and launch helpful apps like Canvas for classes and Microsoft
+                Outlook for mail, and see library and lab PC availability from within the app.</p>
+        </div>
+    </div>
+</div>
+<Br>
+
+<!-- Contact Modal -->
+<div id="contactmodal" class="modal">
+    <div class="modal-content">
+        <h4 style="font-weight: bold" class="green-text">Get in touch!</h4>
+        <br>
+        <ul>
+            <li><i class="small material-icons">phone_iphone</i> <a class="black-text flow-text"> +44 (0)7896862030</a>
+            </li>
+            <br>
+            <li><i class="small material-icons">mail</i><a class=" black-text flow-text"> dylan@dgil.uk</a></li>
+            <br>
+            <li><i class="small material-icons">code</i><a class="black-text flow-text"
+                                                           href="http://github.com/sixteeneleven"> GitHub</a></li>
+        </ul>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+</div>
+<!-- Testing CTA -->
+<br><br><br>
+<!-- Hero App Store Graphics -->
+<div class="row">
+    <!-- Image -->
+    <div class="col s12 l5 offset-l1">
+        <div class="icon-block">
+            <div class="center-align">
+                <h3 class="green-text text-darken-3" style="font-weight: bold">Download for iOS</h3>
+                <br>
+                <a href="https://testflight.apple.com/join/yEPkRrHU"
+                   class="waves-effect waves-light btn-large light-blue hoverable">Open in TestFlight</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="col s12 l5">
+        <div class="icon-block">
+            <div class="center-align">
+                <h3 class="green-text text-darken-3" style="font-weight: bold">Download for Android</h3>
+                <br>
+                <a href="https://testflight.apple.com/join/yEPkRrHU"
+                   class="waves-effect waves-light btn-large green hoverable">Open in TestFlight</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<br>
+
+<!-- Black Section -->
+<div class="section black">
+    <!-- Hero Header -->
+    <div class="section no-pad-bot" id="index-banner2">
+        <div class="container">
+            <h3 class="header center white-text" style="font-weight: bold">Stirrup collects no personal
+                information.</h3>
+            <br>
+        </div>
+    </div>
+
+    <!-- Columns -->
+    <div class="container">
+        <div class="section">
+            <!-- Mobile App Section -->
+            <div class="row">
+                <div class="col s10 l6   offset-s1 offset-m1 offset-l3 ">
+                    <div class="icon-block">
+                        <div class="icon-block">
+                            <h2 class="center orange-text"><i class="material-icons large">security</i></h2>
+                        </div>
+                        <p class="f light white-text">While Stirrup does require a yearly subscription to access some
+                            features, we never see or handle your data or account details as these are handled by your
+                            device's app store. Any information you enter to log in to the student portal or other
+                            application like Canvas is handled by your device's web browser or other app and we can't
+                            access it.</p>
+                        <br>
+                        <div class="center"><a href="https://www.dgil.uk/stirrup-privacy.html"
+                                               class="waves-effect waves-light btn-small orange hoverable">Privacy
+                            Policy</a></div>
+
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <!-- Image -->
+    <div class="col s10 l10 s10 offset-l1 offset-s1 center">
+        <p style="font-weight: bold">Stirrup is not an official University of Stirling product and is no way officially
+            supported or endorsed by the University.</p>
+    </div>
+</div>
+
+
+</div>
+
+<!-- Footer -->
+<footer class="page-footer green darken-4">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s8">
+                <h5 class="white-text">Need an app or website?</h5>
+                <p class="grey-text text-lighten-4">See what a template-based website or cross-platform application
+                    could do for your business. <a class="orange-text text-lighten-3" href="business.html">dgil + you
+                        for your business.
+                    </a></p>
+
+            </div>
+
+            <div class="col l4 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                    <li><i class="tiny material-icons">phone_iphone</i> <a class="white-text modal-trigger"
+                                                                           href="#contactmodal">+44 (0)7896 862030</a>
+                    </li>
+                    <li><i class="tiny material-icons">mail</i><a class="white-text modal-trigger" href="#contactmodal">
+                        dylan@dgil.uk</a></li>
+                    <li><i class="tiny material-icons">code</i><a class="white-text modal-trigger" href="#contactmodal">
+                        GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Made by <a class="orange-text text-lighten-3" href="http://instagram.com/deagil.x">Dylan Gilchrist</a>
+        </div>
+    </div>
+</footer>
+
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    import AOS from 'aos';
+    import 'aos/dist/aos.css';
+
+    AOS.init();
+</script>
+</body>
+</html>

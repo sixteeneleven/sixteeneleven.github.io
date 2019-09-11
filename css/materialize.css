@@ -7,6 +7,14 @@
 @-webkit-keyframes typing { from { width: 0; } }
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
+.center-modal {
+  display: flex;
+}
+.center-modal .modal {
+  position: relative;
+  width: auto;
+}
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
